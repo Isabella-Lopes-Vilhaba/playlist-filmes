@@ -1,42 +1,41 @@
 body {
   font-family: "Roboto Mono", monospace;
   text-align: center;
-  background-image: url("imagens/background.png");
+  background-image: url("imagens/background_1.png");
   background-color: #000000;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0;
+}
+
+header {
+  background-color: #181818;
+  padding-top: 10px;
+  position: fixed;
+  width: 100%;
 }
 
 .page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
+  color: white;
+  margin: 10px 0;
+  font-size: 50px;
   text-decoration: underline overline #b22222;
 }
 
-
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
+nav {
+  background-color: #222222;
+  padding: 10px;
 }
-
-
-div#categoria{
-  background-color: black;
-  color: #ffffff;
-  font-size: 30px;
-  text-decoration: underline #b22222;
-  position: center;
-}
-
 
 button{
-  border-radius: 50px;
+  border-radius: 15px;
   padding: 10px;
-  font-weight: bolder;
+  font-weight: 900;
   background-color: white;
   color: red;
+  font-size: 18px;
 }
 
 
@@ -44,6 +43,22 @@ button:hover{
   background-color: red;
   color: white;
 }
+/*  */
+.page-subtitle {
+  color: white;
+  margin-top: 5px;
+}
+
+div#categoria{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-decoration: underline red;
+  position: center;
+}
+
+
+
 
 body > img {
   margin: 0 10px;
