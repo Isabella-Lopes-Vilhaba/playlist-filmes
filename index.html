@@ -8,7 +8,7 @@
   <title>Playlist - Filmes</title>
 </head>
 <body>
-  <header>
+  <header #header>
       <h1 class="page-title">
         Playlist - Filmes
       </h1>
@@ -22,10 +22,13 @@
       <button onclick="semCategoria()">Sem Categoria</button>
     </nav>
   </header>
-<!--  -->
-  <div id="categoria"></div>
-  <div class="fundo"><div id="resultado"></div></div>
-
+  <main>
+    <section id="categoria"></section>
+    <section class="fundo">
+      <section id="resultado"></section>
+    </section>
+  </main>
+  <footer>Criado por Isabella Vilhaba - 2021</footer>
   <script src="app.js"></script>
 </body>
 </html>

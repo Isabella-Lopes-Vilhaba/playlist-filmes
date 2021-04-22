@@ -13,8 +13,8 @@ body {
 header {
   background-color: #181818;
   padding-top: 10px;
-  position: fixed;
   width: 100%;
+  margin-top: 0;
 }
 
 .page-title {
@@ -38,18 +38,12 @@ button{
   font-size: 18px;
 }
 
-
 button:hover{
   background-color: red;
   color: white;
 }
-/*  */
-.page-subtitle {
-  color: white;
-  margin-top: 5px;
-}
 
-div#categoria{
+#categoria{
   background-color: black;
   color: white;
   font-size: 30px;
@@ -57,10 +51,17 @@ div#categoria{
   position: center;
 }
 
+footer {
+  background-color: #181818;
+  padding: 10px 0;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+}
+/*  */
 
 
-
-body > img {
+body img {
   margin: 0 10px;
   padding: 10px;
 }
