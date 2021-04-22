@@ -44,11 +44,58 @@ button:hover{
 }
 
 #categoria{
-  background-color: black;
+  background-color: #000000a2;
   color: white;
   font-size: 30px;
   text-decoration: underline red;
-  position: center;
+  padding: 0 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+.fundo{
+  background-color: #00000093;
+  width:75%;
+  margin: auto; 
+}
+
+.conteudo{
+  display: inline-block;
+	justify-content: center;
+	width: 280px;
+  border: 5px solid black;
+	margin: 15px;
+  animation: neon 2s alternate infinite ease-in-out;
+  --cor-neon: red;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 15px var(--cor-neon));
+  }
+}
+
+.cartaz{
+	border: 5px solid black;
+	margin: 15px;
+  animation: neon 2s alternate infinite ease-in-out;
+  --cor-neon: black;
+}
+
+.cartaz:hover{
+  box-shadow:0 0px 20px whitesmoke;
+}
+
+body img {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+h3{
+  color: white;
 }
 
 footer {
@@ -57,68 +104,4 @@ footer {
   color: white;
   font-size: 15px;
   width: 100%;
-}
-/*  */
-
-
-body img {
-  margin: 0 10px;
-  padding: 10px;
-}
-
-
-@keyframes neon {
-  from {
-    filter: drop-shadow(0 0 0 var(--cor-neon));
-  }
-  to {
-    filter: drop-shadow(0 0 30px var(--cor-neon));
-  }
-}
-
-.posterBox{
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll
-}
-
-.cartaz:hover{
-  top: 10px;
-  box-shadow:0 20px 19px whitesmoke;
-}
-
-.cartaz{
-  display: inline-block;
-	justify-content: center;
-	Color: black;
-	border: 5px solid black;
-	width: auto;
-	height: auto;
-	margin: 15px;
-  animation: neon 2s alternate infinite ease-in-out;
-  --cor-neon: black;
-  
-}
-
-.fundo{
-  background-color: #00000050;
-  width:75%;
-  margin: auto; 
-}
-
-.conteudo{
-  display: inline-block;
-	justify-content: center;
-	Color: red;
-	width: 280px;
-  border: 5px solid black;
-	margin: 15px;
-  animation: neon 2s alternate infinite ease-in-out;
-  --cor-neon: red;
-}
-
-
-
-h3{
-  color: #ffffff;
 }
